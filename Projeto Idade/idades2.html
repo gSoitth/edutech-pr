@@ -1,0 +1,105 @@
+<meta charset="UTF-8">
+
+<script>
+
+    {//     ALERTAS     
+
+        alert("Seu cartão foi clonado KKKKK");
+
+    }
+
+    {//     FUNÇÕES     
+
+        {// PULAR LINHA
+            function pLinha()
+            {
+                document.write("<br>");
+            }
+        }
+
+        {// Escrever
+            function escrever(Texto)
+            {
+                document.write(Texto);
+                pLinha();
+            } 
+        }
+
+    }
+    
+    {//    VARIAVEIS    
+
+        {// NOME DA PESSOA
+            var nomeInformado = prompt("Qual é o seu nome?");
+        }
+
+        {// ANO 
+            var ano = prompt("Informe um ano");
+        }
+    
+        {// DATAS DE NASCIMENTO 
+            var nascimentoGabriel = 2006;
+            var nascimentoAliny = 1981;
+            var nascimentoDuda = 2004;
+            var seuNascimento = prompt("Informe seu ano de nascimento.");
+        }
+
+        {// IDADE DAS PESSOAS 
+            var idadeGabriel = ano - 2006;
+            var idadeAliny = ano - 1981;
+            var idadeDuda = ano - 2004;
+            var suaIdade = ano - seuNascimento; 
+        }
+
+        {// MÉDIA DAS IDADES 
+            var media = (idadeGabriel + idadeAliny + idadeDuda + suaIdade)/3;
+        }
+
+    }
+
+    {//     TEXTOS      
+        
+        escrever("Em " + ano + ":");
+
+        if(ano > 2021) { 
+            escrever("Gabriel terá " + idadeGabriel + " anos;");
+            escrever("Aliny terá " + idadeAliny + " anos;");
+            escrever("Duda terá " + idadeDuda + " anos;");
+            escrever("E você, " + nomeInformado +  ", terá " + suaIdade + " anos.");
+        }
+
+        if(ano < 2021 && ano > nascimentoGabriel) {
+            escrever("Gabriel tinha " + idadeGabriel + " anos.");
+        }
+
+        if(ano < nascimentoGabriel) {
+            escrever("Gabriel ainda não havia nascido.");
+        }
+        
+        if(ano < 2021 && ano > nascimentoAliny) {
+            escrever("Aliny tinha " + idadeAliny + " anos;");
+        }
+
+        if(ano < nascimentoAliny) {
+            escrever("Aliny ainda não havia nascido.");
+        }
+
+        if(ano < 2021 && ano > nascimentoDuda) {
+            escrever("Duda tinha " + idadeDuda + " anos;");
+        }
+
+        if(ano < nascimentoDuda) {
+            escrever("Duda ainda não havia nascido.");
+        }
+
+        if(ano < 2021 && ano > seuNascimento) {
+            escrever("E você, " + nomeInformado +  ", tinha " + suaIdade + " anos.");
+        }
+
+        if(ano < seuNascimento) {
+            escrever("E você, " + nomeInformado + ", ainda não havia nascido.");
+        }
+    
+    }
+
+</script>
